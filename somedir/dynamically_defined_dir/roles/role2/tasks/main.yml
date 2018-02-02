@@ -1,0 +1,6 @@
+
+- set_fact:
+    some_var: "{{ lookup('template', 'sometemplate.j2') }}"
+
+- debug: msg="some_var={{some_var}}"    
+
